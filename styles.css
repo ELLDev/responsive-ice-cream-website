@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --ff-heading: "Staatliches", "sans-serif";
+  --ff-texting: "Palanquin", "sans-serif";
+  --bg-primary: #8e9aaf;
+  --bg-secondary: #cbc0d3;
+  --bg-tertiary: #eff1ff;
+  --bg-quaternary: #feeafa;
+  --fc-primary: #23053a;
+  --fc-secondary: #4a4e69;
+}
+
+body {
+  background-color: var(--bg-tertiary);
+  text-align: center;
+}
+
+.logo {
+  margin: 2rem auto;
+}
+
+header {
+  background-color: var(--bg-primary);
+  padding-bottom: 1.81rem;
+}
+
+h1 {
+  background-color: var(--bg-secondary);
+  color: #fff;
+  font-family: var(--ff-heading);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 34px;
+  letter-spacing: 0.05em;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  padding: 0.5rem 0;
+}
+
+main {
+  margin: 1rem 2rem 3.75rem 2rem;
+}
+
+p {
+  color: var(--fc-primary);
+  font-family: var(--ff-texting);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  margin-bottom: 4rem;
+}
+
+.image-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.image-wrapper img {
+  border-radius: 1rem;
+}
