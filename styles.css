@@ -47,7 +47,7 @@ header {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.25rem;
-  padding-top: 3.18rem;
+  padding: 3.18rem 0;
   margin: 0 3rem;
 }
 
@@ -235,12 +235,9 @@ footer {
 }
 
 @media (min-width: 75em) {
-  body {
-    background-color: #fff;
-  }
-
   .page {
     display: flex;
+    background-color: var(--bg-primary);
   }
   header {
     display: block;
@@ -273,6 +270,7 @@ footer {
   }
 
   main {
+    background-color: #fff;
     width: 70.6vw;
     margin: 0;
   }
@@ -319,5 +317,18 @@ footer {
 
   .image-container div:nth-child(6) {
     grid-area: F;
+  }
+  
+  @media (min-width: 121em) {
+    header {
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 }
